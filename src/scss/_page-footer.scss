@@ -1,0 +1,192 @@
+.page-footer {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 6rem 0;
+
+    @include breakpoint(mobile) {
+        padding-top: 5rem;
+        padding-bottom: 6.5rem;
+    }
+}
+
+.page-footer__top-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: initial;
+        display: contents;
+    }
+}
+
+.page-footer__logo {
+    flex-shrink: 0;
+    margin-right: 4rem;
+
+    @include breakpoint(mobile) {
+        flex-shrink: 1;
+        margin: 0;
+        grid-area: logo;
+    }
+}
+
+.page-footer__logo-image {
+    width: 10rem;
+    height: auto;
+    display: block;
+
+    @include breakpoint(mobile) {
+    }
+}
+
+.page-footer__tech-alliance {
+    margin-right: 6rem;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        grid-area: alliance;
+    }
+}
+
+.page-footer__tech-alliance-image {
+    width: 18rem;
+    display: block;
+    height: auto;
+    @include breakpoint(mobile) {
+        width: 16rem;
+    }
+}
+
+.page-footer__nav {
+    display: flex;
+    margin-left: auto;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-column-gap: 5rem;
+        grid-row-gap: 3.5rem;
+        grid-area: footer-nav;
+        margin-bottom: 6.5rem;
+    }
+}
+
+.page-footer__nav-link {
+    margin-right: 4rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: var(--primary-color);
+    }
+}
+
+.page-footer__bottom-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        justify-content: initial;
+        display: contents;
+    }
+}
+
+.page-footer__copyright {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #9a9a9a;
+    max-width: 43rem;
+    margin-right: 5rem;
+
+    @include breakpoint(mobile) {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        max-width: none;
+        grid-area: copyright;
+        margin-top: 4.5rem;
+    }
+}
+
+.page-footer__social-list {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(mobile) {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-gap: 4rem;
+        grid-row-gap: 3rem;
+        grid-area: social;
+        margin-bottom: 6.5rem;
+    }
+}
+
+.page-footer__social-list-item {
+    flex-shrink: 0;
+    margin-right: 1.2rem;
+
+    @include breakpoint(mobile) {
+        flex-shrink: 1;
+        margin: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.page-footer__social-link {
+    width: 3.8rem;
+    height: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s;
+
+    @include breakpoint(mobile) {
+    }
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        display: block;
+        fill: var(--text-color);
+        transition: fill 0.2s;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        transform: scale(0.9);
+    }
+}
+
+.page-footer__grid {
+    @include breakpoint(mobile) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas: 'footer-nav footer-nav' 'social social' 'logo alliance' 'copyright copyright';
+    }
+}

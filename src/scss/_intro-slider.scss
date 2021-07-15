@@ -1,0 +1,90 @@
+.intro-slider {
+    background-color: var(--dark-bg);
+    color: white;
+    padding-top: 2.4rem;
+    padding-bottom: 1.2rem;
+
+    @include breakpoint(mobile) {
+        padding-bottom: 0;
+    }
+    // display: none;
+}
+
+.intro-slider__wrapper {
+    position: relative;
+
+    @include breakpoint(mobile) {
+        margin: 0 calc(-1 * var(--content-padding));
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        width: 102rem;
+
+        @include breakpoint(mobile) {
+            width: 100%;
+        }
+    }
+
+    .swiper-container {
+        overflow: visible;
+    }
+}
+
+.intro-slider__logo {
+    position: absolute;
+    width: 13.8rem;
+    height: auto;
+    left: 4rem;
+    top: 4rem;
+    z-index: 70;
+    @include breakpoint(mobile) {
+        left: var(--content-padding);
+        top: 4rem;
+    }
+}
+
+.intro-slider__card {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 5.5rem;
+    font-weight: bold;
+    min-height: 42rem;
+    transition: background-color .2s, color .2s;
+    color: rgba(white, .4);
+    background: #343434;
+    position: relative;
+    z-index: 1;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    @include breakpoint(mobile) {
+        min-height: 50rem;
+        padding: 4.4rem var(--content-padding);
+    }
+    .swiper-slide-active & {
+        background: #3E3E3E;
+        color: white;
+    }
+}
+
+
+.intro-slider__card-text {
+    max-width: 50rem;
+    margin-top: auto;
+    margin-left: auto;
+    font-size: 5.4rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    
+}

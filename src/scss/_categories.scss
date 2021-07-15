@@ -1,0 +1,213 @@
+.categories {
+    margin-bottom: 8.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 6rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.categories__heading {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    margin-bottom: 1.8rem;
+
+    @include breakpoint(mobile) {
+        font-weight: 500;
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+}
+
+.categories__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 0.8rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.categories__list-item {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpointMF(small-tablet) {
+        &--large {
+            grid-column: span 2;
+        }
+    }
+
+    
+}
+
+.categories__card {
+    display: block;
+    position: relative;
+    z-index: 1;
+    background-color: var(--text-color);
+    color: white;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    &:link,
+    &:visited {
+        color: white;
+    }
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    .categories__list-item--large & {
+        @include breakpointMF(small-tablet) {
+            &::before {
+                padding-bottom: calc(50% - 0.4rem);
+            }
+        }
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        .categories__card-image {
+            transform: scale(1.05);
+            transition: transform 0.5s;
+        }
+    }
+}
+
+.categories__card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+}
+
+.categories__card-title {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    right: 1.2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+
+.categories__card-arrow {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: var(--text-color);
+    }
+}
+
+.categories__new-card {
+    position: relative;
+    z-index: 1;
+    background-color: var(--primary-color);
+    background-image: url('../img/new-label.svg'), url('../img/news-arrow-right.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, center;
+    background-size: 16.7rem auto, 5.4rem auto;
+    color: white;
+
+  
+
+    svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 5.2rem;
+        height: 3.2rem;
+        fill: white;
+
+        @include breakpoint(mobile) {
+            background-size: 16.7rem auto, 5.4rem auto;
+        }
+    }
+
+    &:link,
+    &:visited {
+        color: white;
+    }
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+    }
+}
+
+.categories__new-card-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    text-align: center;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+
+.categories__new-card-label {
+    position: absolute;
+}
+
+.categories__show-all {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding: 1.4rem 2.4rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.3rem;
+    font-family: 'FranklinCTT', sans-serif;
+    align-self: center;
+    margin-top: 3.5rem;
+
+    @include breakpoint(mobile) {
+        margin-top: 4rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        letter-spacing: 0.02em;
+        margin-top: 4rem;
+        padding: 1.4rem 2.4rem;
+    }
+    &:link,
+    &:visited {
+        color: white;
+    }
+}
