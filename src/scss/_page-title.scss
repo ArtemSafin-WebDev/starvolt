@@ -1,0 +1,78 @@
+.page-title {
+    margin-bottom: 3.5rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 2rem;
+    }
+}
+
+.page-title__row {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: initial;
+    }
+}
+
+.page-title__heading {
+    font-weight: bold;
+    font-size: 5.4rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    @include breakpoint(mobile) {
+        font-size: 3.6rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        width: 50%;
+        flex-grow: 1;
+    }
+}
+
+.page-title__links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        justify-content: space-between;
+    }
+}
+
+.page-title__link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-right: 5rem;
+
+    @include breakpoint(mobile) {
+        margin-right: 2rem;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: var(--primary-color);
+    }
+
+    svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        flex-shrink: 0;
+        margin-right: 1.2rem;
+        fill: currentColor;
+    }
+}

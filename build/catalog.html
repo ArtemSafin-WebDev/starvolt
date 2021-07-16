@@ -218,39 +218,6 @@
         </header>        <main class="page-main">
 
 
-<section class="intro-slider">
-    <div class="container">
-        <div class="intro-slider__wrapper js-intro-slider">
-            <img src="img/logo.svg" alt="" class="intro-slider__logo">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="intro-slider__card">
-                            <div class="intro-slider__card-text">
-                                Качество<br> гарантировано опытом
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="intro-slider__card">
-                            <div class="intro-slider__card-text">
-                                Качество<br> гарантировано опытом
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="intro-slider__card">
-                            <div class="intro-slider__card-text">
-                                Качество<br> гарантировано опытом
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="search-panel">
     <div class="container">
         <div class="search-panel__row">
@@ -433,36 +400,57 @@
         </div>
     </div>
 </section>
-<section class="home-filters">
+<div class="page-title">
     <div class="container">
-        <form action="/" method="GET" class="home-filters__row">
-            <div class="home-filters__select-wrapper">
-                <div class="custom-select">
 
 
-                    <select name="category" class="js-custom-select">
-                        <option value="" placeholder>
-                            Категория
-                        </option>
-                        <option value="1">
-                            Категория 1
-                        </option>
-                        <option value="2">
-                            Категория 2
-                        </option>
-                        <option value="3">
-                            Категория 3
-                        </option>
-                        <option value="4">
-                            Категория 4
-                        </option>
-                    </select>
-                </div>
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumbs__link">
+                главная
+            </a>
+            <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+                <use xlink:href="#breadcrumbs-arrow"></use>
+            </svg>
+            <a href="#" class="breadcrumbs__link active">
+                каталог
+            </a>
+        </div>
+        <div class="page-title__row">
+            <h1 class="page-title__heading">
+                Генераторы
+            </h1>
+            <div class="page-title__links">
+                <a href="#" class="page-title__link">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-promo">
+                        <use xlink:href="#promo"></use>
+                    </svg>
+                    Промо
+                </a>
+                <a href="#" class="page-title__link">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-presentation">
+                        <use xlink:href="#presentation"></use>
+                    </svg>
+                    Презентация
+                </a>
+                <a href="#" class="page-title__link">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-materials-catalog">
+                        <use xlink:href="#materials-catalog"></use>
+                    </svg>
+                    Материалы
+                </a>
             </div>
-            <div class="home-filters__select-wrapper">
+        </div>
+    </div>
+</div>
+
+<div class="catalog-filters">
+    <div class="container">
+        <form action="/" method="GET" class="catalog-filters__form">
+            <a href="#" class="catalog-filters__oem">
+                Артикул / OEM
+            </a>
+            <div class="catalog-filters__select-wrapper">
                 <div class="custom-select">
-
-
                     <select name="trademark" class="js-custom-select">
                         <option value="" placeholder>
                             Марка
@@ -482,10 +470,8 @@
                     </select>
                 </div>
             </div>
-            <div class="home-filters__select-wrapper">
+            <div class="catalog-filters__select-wrapper">
                 <div class="custom-select">
-
-
                     <select name="model" class="js-custom-select">
                         <option value="" placeholder>
                             Модель
@@ -505,10 +491,8 @@
                     </select>
                 </div>
             </div>
-            <div class="home-filters__select-wrapper">
+            <div class="catalog-filters__select-wrapper">
                 <div class="custom-select">
-
-
                     <select name="modification" class="js-custom-select">
                         <option value="" placeholder>
                             Модификация
@@ -528,492 +512,686 @@
                     </select>
                 </div>
             </div>
-            <div class="home-filters__select-wrapper">
-                <div class="custom-select">
-
-
-                    <select name="type" class="js-custom-select">
-                        <option value="" placeholder>
-                            Тип топлива
-                        </option>
-                        <option value="1">
-                            Тип топлива 1
-                        </option>
-                        <option value="2">
-                            Тип топлива 2
-                        </option>
-                        <option value="3">
-                            Тип топлива 3
-                        </option>
-                        <option value="4">
-                            Тип топлива 4
-                        </option>
-                    </select>
-                </div>
-            </div>
-            <div class="home-filters__select-wrapper">
-                <div class="custom-select">
-                    <select name="period" class="js-custom-select">
-                        <option value="" placeholder>
-                            Период выпуска
-                        </option>
-                        <option value="1">
-                            Период выпуска 1
-                        </option>
-                        <option value="2">
-                            Период выпуска 2
-                        </option>
-                        <option value="3">
-                            Период выпуска 3
-                        </option>
-                        <option value="4">
-                            Период выпуска 4
-                        </option>
-                    </select>
-                </div>
-            </div>
-            <button type="submit" class="home-filters__submit">
-                Найти
+            <button class="catalog-filters__submit" type="submit">
+                показать
             </button>
         </form>
     </div>
-</section>
+</div>
 
-<section class="advantages">
+<div class="catalog">
     <div class="container">
-        <ul class="advantages__list">
-            <li class="advantages__list-item">
-                <div class="advantages__card">
-                    <img src="img/advantages/10years.png" alt=""
-                        class="advantages__card-icon advantages__card-icon--special">
-                    <div class="advantages__card-content advantages__card-content--special">
-
-                        <div class="advantages__card-text">
-                            <p>
-                                лет на рынке<br> автоэлектрики
-                            </p>
-                        </div>
-                    </div>
+        <div class="catalog__top-row">
+            <div class="catalog__top-left-col">
+                <div class="catalog__total">
+                    Всего товаров: 3
                 </div>
-
-            </li>
-            <li class="advantages__list-item">
-                <div class="advantages__card">
-                    <img src="img/advantages/1.svg" alt="" class="advantages__card-icon">
-                    <div class="advantages__card-content">
-                        <div class="advantages__card-amount">
-                            2500 SKU
-                        </div>
-                        <div class="advantages__card-text">
-                            <p>
-                                товарных единиц продукции
-                            </p>
-                        </div>
+            </div>
+            <div class="catalog__top-right-col">
+                <div class="catalog__show-by">
+                    <h4 class="catalog__show-by-title">
+                        Показать по:
+                    </h4>
+                    <div class="catalog__show-by-links">
+                        <a href="#" class="catalog__show-by-link active">
+                            12
+                        </a>
+                        <a href="#" class="catalog__show-by-link">
+                            24
+                        </a>
+                        <a href="#" class="catalog__show-by-link">
+                            60
+                        </a>
+                        <a href="#" class="catalog__show-by-link">
+                            120
+                        </a>
                     </div>
+
                 </div>
-
-            </li>
-            <li class="advantages__list-item">
-                <div class="advantages__card">
-                    <img src="img/advantages/2.svg" alt="" class="advantages__card-icon">
-                    <div class="advantages__card-content">
-
-                        <div class="advantages__card-text">
-                            <p>
-                                Расширенная гарантия на всю продукция
-                                с момента продажи
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </li>
-            <li class="advantages__list-item">
-                <div class="advantages__card">
-                    <img src="img/advantages/3.svg" alt="" class="advantages__card-icon">
-                    <div class="advantages__card-content">
-
-                        <div class="advantages__card-text">
-                            <p>
-                                Специализированный производитель и поставщик Автоэлектрики
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </li>
-        </ul>
-    </div>
-</section>
-
-
-<section class="categories">
-    <div class="container">
-        <h2 class="categories__heading">
-            Категории
-        </h2>
-        <ul class="categories__list">
-            <li class="categories__list-item categories__list-item--large">
-                <a href="#" class="categories__card">
-
-
-                    <picture>
-                        <source data-srcset="img/categories/1-mobile.jpg" media="(max-width: 640px)">
-                        <img data-src="img/categories/1.jpg" alt="" class="lazyload categories__card-image"
-                            data-sizes="auto">
-                    </picture>
-                    <h4 class="categories__card-title">
-                        Генераторы
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/2.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Клапаны фаз ГРМ
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/3.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Катушки
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/4.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Катушки
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/5.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Детали системы стеклоочистителя
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item categories__list-item--large">
-                <a href="#" class="categories__card">
-                    <picture>
-                        <source data-srcset="img/categories/1-mobile.jpg" media="(max-width: 640px)">
-                        <img data-src="img/categories/1.jpg" alt="" class="lazyload categories__card-image"
-                            data-sizes="auto">
-                    </picture>
-                    <h4 class="categories__card-title">
-                        Стартеры
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/7.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Клеммы
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/8.jpg" alt="" class=" lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Детали системы стеклоочистителя
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/9.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Свечи накаливания
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/10.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Насосы отопителя и охлаждения
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/11.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Свечи накаливания
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/12.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Насосы
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__card">
-                    <img data-src="img/categories/13.jpg" alt="" class="lazyload categories__card-image">
-                    <h4 class="categories__card-title">
-                        Лямбда зонды
-
-                        <div class="categories__card-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </h4>
-                </a>
-            </li>
-            <li class="categories__list-item">
-                <a href="#" class="categories__new-card">
-
-                    <div class="categories__new-card-content">
-                        Смотреть новинки
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <a href="#" class="categories__show-all">
-            смотреть Весь каталог
-        </a>
-    </div>
-</section>
-
-
-<section class="presentation">
-    <div class="container">
-        <div class="presentation__row">
-            <div class="presentation__left-col">
-                <h2 class="presentation__heading">
-                    <strong>
-                        STARTVOLT —
-                    </strong>
-
-                    состоит в портфеле брендов холдинга "КАРВИЛЬ
-                </h2>
-                <ul class="presentation__companies-list">
-                    <li class="presentation__companies-list-item">
-                        <a href="#" class="presentation__companies-link">
-                            <img src="img/companies/1.svg" alt="" class="presentation__companies-link-icon">
-                        </a>
-                    </li>
-                    <li class="presentation__companies-list-item">
-                        <a href="#" class="presentation__companies-link">
-                            <img src="img/companies/2.svg" alt="" class="presentation__companies-link-icon">
-                        </a>
-                    </li>
-                    <li class="presentation__companies-list-item">
-                        <a href="#" class="presentation__companies-link">
-                            <img src="img/companies/3.svg" alt="" class="presentation__companies-link-icon">
-                        </a>
-                    </li>
-                    <li class="presentation__companies-list-item">
-                        <a href="#" class="presentation__companies-link">
-                            <img src="img/companies/4.svg" alt="" class="presentation__companies-link-icon">
-                        </a>
-                    </li>
-                    <li class="presentation__companies-list-item">
-                        <a href="#" class="presentation__companies-link">
-                            <img src="img/companies/5.svg" alt="" class="presentation__companies-link-icon">
-                        </a>
-                    </li>
-                    <li class="presentation__companies-list-item">
-                        <a href="#" class="presentation__companies-link">
-                            <img src="img/companies/6.svg" alt="" class="presentation__companies-link-icon">
-                        </a>
-                    </li>
-                </ul>
-                <div class="presentation__buttons">
-                    <a href="#" class="presentation__watch-btn">
-                        Смотреть презентацию (PDF)
-                    </a>
-                    <a href="#" class="presentation__download-btn">
-                        <svg width="14" height="14" aria-hidden="true" class="icon-download">
-                            <use xlink:href="#download"></use>
+                <div class="catalog__modes">
+                    <a href="#" class="catalog__modes-link active">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-mode-1">
+                            <use xlink:href="#mode-1"></use>
                         </svg>
-                        Скачать
+                    </a>
+                    <a href="#" class="catalog__modes-link">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-mode-2">
+                            <use xlink:href="#mode-2"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="catalog__modes-link">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-mode-3">
+                            <use xlink:href="#mode-3"></use>
+                        </svg>
                     </a>
                 </div>
-            </div>
-            <div class="presentation__right-col">
-                <a href="#" class="presentation__video-wrapper">
-                    <svg width="14" height="14" aria-hidden="true" class="icon-play">
-                        <use xlink:href="#play"></use>
-                    </svg>
-                </a>
+                <button class="catalog__filters-open-btn">
+                    фильтры
+                </button>
             </div>
         </div>
-    </div>
-</section>
+        <div class="catalog__main-row">
+            <div class="catalog__main-left-col">
+                <div class="catalog__filters">
+                    <div class="catalog__filters-controls">
+                        <h4 class="catalog__filters-title">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-filters">
+                                <use xlink:href="#filters"></use>
+                            </svg>
+                            Фильтр
+                        </h4>
+                        <button class="catalog__filters-close" type="button">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <form action="/" method="GET" class="catalog__filters-form">
+                        <div class="catalog__filters-group">
+                            <h4 class="catalog__filters-group-title">
+                                Авто
+                            </h4>
+                            <div class="catalog__filters-checkboxes">
+                                <label class="catalog__filters-checkbox">
 
-<section class="news">
-    <div class="container">
-        <h2 class="news__heading">
-            Новости
-        </h2>
-        <div class="news__slider js-news-slider">
-            <div class="swiper-container">
-                <ul class="swiper-wrapper news__list">
-                    <li class="swiper-slide news__list-item">
-                        <a href="#" class="news__slider-card">
-                            <div class="news__slider-card-image-container">
-                                <img src="img/news/1.jpg" alt="" class="news__slider-card-image">
-                            </div>
-                            <h4 class="news__slider-card-title">
-                                Новинки STARTVOLT декабря 2020 года
-                            </h4>
-                            <div class="news__slider-card-text">
-                                <p>
-                                    Представляем все новинки STARTVOLT за декабрь 2020 года
-                                </p>
-                            </div>
-                            <div class="news__slider-card-date">
-                                14/03/2020
-                            </div>
-                        </a>
-                    </li>
-                    <li class="swiper-slide news__list-item">
-                        <a href="#" class="news__slider-card">
-                            <div class="news__slider-card-image-container">
-                                <img src="img/news/2.jpg" alt="" class="news__slider-card-image">
-                            </div>
-                            <h4 class="news__slider-card-title">
-                                Новинки STARTVOLT декабря 2020 года
-                            </h4>
-                            <div class="news__slider-card-text">
-                                <p>
-                                    Представляем все новинки STARTVOLT за декабрь 2020 года
-                                </p>
-                            </div>
-                            <div class="news__slider-card-date">
-                                14/03/2020
-                            </div>
-                        </a>
-                    </li>
-                    <li class="swiper-slide news__list-item">
-                        <a href="#" class="news__slider-card">
-                            <div class="news__slider-card-image-container">
-                                <img src="img/news/3.jpg" alt="" class="news__slider-card-image">
-                            </div>
-                            <h4 class="news__slider-card-title">
-                                Новинки STARTVOLT декабря 2020 года
-                            </h4>
-                            <div class="news__slider-card-text">
-                                <p>
-                                    Представляем все новинки STARTVOLT за декабрь 2020 года
-                                </p>
-                            </div>
-                            <div class="news__slider-card-date">
-                                14/03/2020
-                            </div>
-                        </a>
-                    </li>
-                    <li class="swiper-slide news__list-item">
-                        <a href="#" class="news__slider-card">
-                            <div class="news__slider-card-image-container">
-                                <img src="img/news/4.jpg" alt="" class="news__slider-card-image">
-                            </div>
-                            <h4 class="news__slider-card-title">
-                                Новинки STARTVOLT декабря 2020 года
-                            </h4>
-                            <div class="news__slider-card-text">
-                                <p>
-                                    Представляем все новинки STARTVOLT за декабрь 2020 года
-                                </p>
-                            </div>
-                            <div class="news__slider-card-date">
-                                14/03/2020
-                            </div>
-                        </a>
-                    </li>
+                                    <input type="checkbox" class="catalog__filters-checkbox-input" checked>
+                                    <span class="catalog__filters-checkbox-mark">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                            <use xlink:href="#checkmark"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="catalog__filters-checkbox-text">Отечественные</span>
+                                </label>
+                                <label class="catalog__filters-checkbox">
 
+                                    <input type="checkbox" class="catalog__filters-checkbox-input" checked>
+                                    <span class="catalog__filters-checkbox-mark">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                            <use xlink:href="#checkmark"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="catalog__filters-checkbox-text">Иномарки</span>
+                                </label>
+                                <label class="catalog__filters-checkbox">
+
+                                    <input type="checkbox" class="catalog__filters-checkbox-input">
+                                    <span class="catalog__filters-checkbox-mark">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                            <use xlink:href="#checkmark"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="catalog__filters-checkbox-text">Грузовые</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="catalog__filters-group">
+                            <h4 class="catalog__filters-group-title">
+                                Заголовок
+                            </h4>
+                            <div class="catalog__filters-checkboxes">
+                                <label class="catalog__filters-checkbox">
+
+                                    <input type="checkbox" class="catalog__filters-checkbox-input" checked>
+                                    <span class="catalog__filters-checkbox-mark">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                            <use xlink:href="#checkmark"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="catalog__filters-checkbox-text">80 А</span>
+                                </label>
+                                <label class="catalog__filters-checkbox">
+
+                                    <input type="checkbox" class="catalog__filters-checkbox-input" checked>
+                                    <span class="catalog__filters-checkbox-mark">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                            <use xlink:href="#checkmark"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="catalog__filters-checkbox-text">130 А</span>
+                                </label>
+                                <label class="catalog__filters-checkbox">
+
+                                    <input type="checkbox" class="catalog__filters-checkbox-input">
+                                    <span class="catalog__filters-checkbox-mark">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                            <use xlink:href="#checkmark"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="catalog__filters-checkbox-text">100 А</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="catalog__filters-group">
+                            <h4 class="catalog__filters-group-title">
+                                Цена, руб.
+                            </h4>
+                            <div class="catalog__filters-range">
+                                <div class="catalog__filters-range-input-wrapper">
+                                    <input type="tel" class="catalog__filters-range-input js-numeric-input-decimals"
+                                        placeholder="100 руб.">
+                                </div>
+                                <div class="catalog__filters-range-input-wrapper">
+                                    <input type="tel" class="catalog__filters-range-input js-numeric-input-decimals"
+                                        placeholder="10000 руб.">
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="catalog__filters-submit" type="submit">
+                            Показать
+                        </button>
+                        <button class="catalog__filters-reset" type="reset">
+                            Сбросить
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="catalog__main-right-col">
+                <ul class="catalog__main-products-list">
+                    <li class="catalog__main-products-list-item">
+                        <div class="catalog__main-products-card">
+                            <a href="#" class="catalog__main-products-card-image-container">
+                                <img data-src="img/card.jpg" alt="" class="lazyload catalog__main-products-card-image">
+                            </a>
+                            <div class="catalog__main-products-card-info">
+                                <h4 class="catalog__main-products-card-title">
+                                    <a href="#">
+                                        Генератор для автомобиля Лада 2110/2113/2170 140А
+                                    </a>
+
+                                </h4>
+                                <a href="#" class="catalog__main-products-card-code js-copy-code" data-code="АЕАТ3002">
+                                    <span class="catalog__main-products-card-code-text">
+                                        Код товара: <strong>АЕАТ3002</strong>
+                                    </span>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-copy">
+                                        <use xlink:href="#copy"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-serials">
+                                    <p>
+                                        OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A,
+                                        A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                    </p>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-brand">
+                                    <div class="catalog__main-products-card-brand-name">
+                                        GAZ
+                                    </div>
+                                    <div class="catalog__main-products-card-brand-models">
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA униве...
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA универсал (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            SOBOL (275...
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-price">
+                                    <h5 class="catalog__main-products-card-recommended">
+                                        Рекомендуемая цена
+                                    </h5>
+                                    <div class="catalog__main-products-card-price-amount">
+                                        8 910 руб.
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-download-materials">
+                                    Скачать материалы
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__main-products-list-item">
+                        <div class="catalog__main-products-card">
+                            <a href="#" class="catalog__main-products-card-image-container">
+                                <img data-src="img/card.jpg" alt="" class="lazyload catalog__main-products-card-image">
+                            </a>
+                            <div class="catalog__main-products-card-info">
+                                <h4 class="catalog__main-products-card-title">
+                                    <a href="#">
+                                        Генератор для автомобиля Лада 2110/2113/2170 140А
+                                    </a>
+
+                                </h4>
+                                <a href="#" class="catalog__main-products-card-code js-copy-code" data-code="АЕАТ3002">
+                                    <span class="catalog__main-products-card-code-text">
+                                        Код товара: <strong>АЕАТ3002</strong>
+                                    </span>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-copy">
+                                        <use xlink:href="#copy"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-serials">
+                                    <p>
+                                        OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A,
+                                        A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                    </p>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-brand">
+                                    <div class="catalog__main-products-card-brand-name">
+                                        GAZ
+                                    </div>
+                                    <div class="catalog__main-products-card-brand-models">
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA униве...
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA универсал (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            SOBOL (275...
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-price">
+                                    <h5 class="catalog__main-products-card-recommended">
+                                        Рекомендуемая цена
+                                    </h5>
+                                    <div class="catalog__main-products-card-price-amount">
+                                        8 910 руб.
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-download-materials">
+                                    Скачать материалы
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__main-products-list-item">
+                        <div class="catalog__main-products-card">
+                            <a href="#" class="catalog__main-products-card-image-container">
+                                <img data-src="img/card.jpg" alt="" class="lazyload catalog__main-products-card-image">
+                            </a>
+                            <div class="catalog__main-products-card-info">
+                                <h4 class="catalog__main-products-card-title">
+                                    <a href="#">
+                                        Генератор для автомобиля Лада 2110/2113/2170 140А
+                                    </a>
+
+                                </h4>
+                                <a href="#" class="catalog__main-products-card-code js-copy-code" data-code="АЕАТ3002">
+                                    <span class="catalog__main-products-card-code-text">
+                                        Код товара: <strong>АЕАТ3002</strong>
+                                    </span>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-copy">
+                                        <use xlink:href="#copy"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-serials">
+                                    <p>
+                                        OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A,
+                                        A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                    </p>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-brand">
+                                    <div class="catalog__main-products-card-brand-name">
+                                        GAZ
+                                    </div>
+                                    <div class="catalog__main-products-card-brand-models">
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA униве...
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA универсал (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            SOBOL (275...
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-price">
+                                    <h5 class="catalog__main-products-card-recommended">
+                                        Рекомендуемая цена
+                                    </h5>
+                                    <div class="catalog__main-products-card-price-amount">
+                                        8 910 руб.
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-download-materials">
+                                    Скачать материалы
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__main-products-list-item">
+                        <div class="catalog__main-products-card">
+                            <a href="#" class="catalog__main-products-card-image-container">
+                                <img data-src="img/card.jpg" alt="" class="lazyload catalog__main-products-card-image">
+                            </a>
+                            <div class="catalog__main-products-card-info">
+                                <h4 class="catalog__main-products-card-title">
+                                    <a href="#">
+                                        Генератор для автомобиля Лада 2110/2113/2170 140А
+                                    </a>
+
+                                </h4>
+                                <a href="#" class="catalog__main-products-card-code js-copy-code" data-code="АЕАТ3002">
+                                    <span class="catalog__main-products-card-code-text">
+                                        Код товара: <strong>АЕАТ3002</strong>
+                                    </span>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-copy">
+                                        <use xlink:href="#copy"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-serials">
+                                    <p>
+                                        OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A,
+                                        A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                    </p>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-brand">
+                                    <div class="catalog__main-products-card-brand-name">
+                                        GAZ
+                                    </div>
+                                    <div class="catalog__main-products-card-brand-models">
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA униве...
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA универсал (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            SOBOL (275...
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-price">
+                                    <h5 class="catalog__main-products-card-recommended">
+                                        Рекомендуемая цена
+                                    </h5>
+                                    <div class="catalog__main-products-card-price-amount">
+                                        8 910 руб.
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-download-materials">
+                                    Скачать материалы
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__main-products-list-item">
+                        <div class="catalog__main-products-card">
+                            <a href="#" class="catalog__main-products-card-image-container">
+                                <img data-src="img/card.jpg" alt="" class="lazyload catalog__main-products-card-image">
+                            </a>
+                            <div class="catalog__main-products-card-info">
+                                <h4 class="catalog__main-products-card-title">
+                                    <a href="#">
+                                        Генератор для автомобиля Лада 2110/2113/2170 140А
+                                    </a>
+
+                                </h4>
+                                <a href="#" class="catalog__main-products-card-code js-copy-code" data-code="АЕАТ3002">
+                                    <span class="catalog__main-products-card-code-text">
+                                        Код товара: <strong>АЕАТ3002</strong>
+                                    </span>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-copy">
+                                        <use xlink:href="#copy"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-serials">
+                                    <p>
+                                        OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A,
+                                        A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                    </p>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-brand">
+                                    <div class="catalog__main-products-card-brand-name">
+                                        GAZ
+                                    </div>
+                                    <div class="catalog__main-products-card-brand-models">
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA униве...
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA универсал (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            SOBOL (275...
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-price">
+                                    <h5 class="catalog__main-products-card-recommended">
+                                        Рекомендуемая цена
+                                    </h5>
+                                    <div class="catalog__main-products-card-price-amount">
+                                        8 910 руб.
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-download-materials">
+                                    Скачать материалы
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__main-products-list-item">
+                        <div class="catalog__main-products-card">
+                            <a href="#" class="catalog__main-products-card-image-container">
+                                <img data-src="img/card.jpg" alt="" class="lazyload catalog__main-products-card-image">
+                            </a>
+                            <div class="catalog__main-products-card-info">
+                                <h4 class="catalog__main-products-card-title">
+                                    <a href="#">
+                                        Генератор для автомобиля Лада 2110/2113/2170 140А
+                                    </a>
+
+                                </h4>
+                                <a href="#" class="catalog__main-products-card-code js-copy-code" data-code="АЕАТ3002">
+                                    <span class="catalog__main-products-card-code-text">
+                                        Код товара: <strong>АЕАТ3002</strong>
+                                    </span>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-copy">
+                                        <use xlink:href="#copy"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-serials">
+                                    <p>
+                                        OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A,
+                                        A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                    </p>
+                                </a>
+                                <a href="#" class="catalog__main-products-card-brand">
+                                    <div class="catalog__main-products-card-brand-name">
+                                        GAZ
+                                    </div>
+                                    <div class="catalog__main-products-card-brand-models">
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA униве...
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            VOLGA универсал (3102)
+                                        </div>
+                                        <div class="catalog__main-products-card-brand-model">
+                                            SOBOL (275...
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-price">
+                                    <h5 class="catalog__main-products-card-recommended">
+                                        Рекомендуемая цена
+                                    </h5>
+                                    <div class="catalog__main-products-card-price-amount">
+                                        8 910 руб.
+                                    </div>
+                                </a>
+
+                                <a href="#" class="catalog__main-products-card-download-materials">
+                                    Скачать материалы
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
+                <div class="catalog__main-products-info">
+                    <div class="catalog__main-products-info-block">
+                        <h4 class="catalog__main-products-info-block-heading">
+                            АВТОМОБИЛЬНЫЕ ГЕНЕРАТОРЫ СТАРТВОЛЬТ
+
+                        </h4>
+
+                        <div class="catalog__main-products-info-block-text">
+                            <p>
+                                Генератор автомобиля - это устройство переменного тока, который преобразовывает
+                                механическую энергию вращения коленвала в электроэнергию, обеспечивая таким образом
+                                зарядку и питание батареи аккумулятора автомобиля. Автомобильные генераторы СтартВОЛЬТ
+                                подходят для автомобилей отечественного производства (VAZ, UAZ, ZAZ, PAZ, KAMAZ, URAL и
+                                т.д.), для популярных иномарок, а также для коммерческого транспорта.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="catalog__main-products-info-block">
+                        <h4 class="catalog__main-products-info-block-heading">
+                            НА ЧТО ОБРАЩАТЬ ВНИМАНИЕ ПРИ ВЫБОРЕ
+
+                        </h4>
+
+                        <div class="catalog__main-products-info-block-text">
+                            <p>
+                                Для отечественных легковых авто представлено 2 вида генераторов: с внешней и с
+                                внутренней
+                                вентиляцией.
+                                Каждая модель по мощности выходного тока превосходит штатный генератор автомобиля и
+                                позволяет подключать
+                                дополнительные опции. Частью конструкции многих моделей служит регулятор напряжения на
+                                основе
+                                современной чиповой технологии. Генераторы для коммерческого транспорта меньше
+                                аналоговых по
+                                габаритам,
+                                отличаются простотой установки и более высоким уровнем мощности. В каталоге указана
+                                расширенная
+                                идентификация моделей: для удобства приводятся не только ОЕМ-номера, но и
+                                cross-reference. В
+                                комплект
+                                каждого генератора входит технический паспорт.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="catalog__main-products-info-block">
+                        <h4 class="catalog__main-products-info-block-heading">
+                            АВТОМОБИЛЬНЫЕ ГЕНЕРАТОРЫ СТАРТВОЛЬТ
+                        </h4>
+
+                        <div class="catalog__main-products-info-block-text">
+                            <p>
+                                Генератор автомобиля - это устройство переменного тока, который преобразовывает
+                                механическую
+                                энергию
+                                вращения коленвала в электроэнергию, обеспечивая таким образом зарядку и питание батареи
+                                аккумулятора
+                                автомобиля. Автомобильные генераторы СтартВОЛЬТ подходят для автомобилей отечественного
+                                производства
+                                (VAZ, UAZ, ZAZ, PAZ, KAMAZ, URAL и т.д.), для популярных иномарок, а также для
+                                коммерческого
+                                транспорта.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="catalog__main-products-info-block">
+                        <h4 class="catalog__main-products-info-block-heading">
+                            ПРЕИМУЩЕСТВА ГЕНЕРАТОРОВ В АВТОМОБИЛЬ
+                        </h4>
+
+                        <div class="catalog__main-products-info-block-text">
+                            <p>
+                                Гарантия на все автомобильные генераторы СтартВОЛЬТ 2 года. Генераторы в авто полностью
+                                соответствуют
+                                штатным изделиям по габаритным размерам и выходным характеристикам, все ключевые узлы
+                                взаимозаменяются с
+                                оригиналом. Мы гарантируем 100%-ный пооперационный контроль качества и выходную проверку
+                                всех
+                                производимых генераторов на специализированном профессиональном оборудовании D&V.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="catalog__main-products-info-block">
+                        <h4 class="catalog__main-products-info-block-heading">
+                            ЗАЯВКА НА СОТРУДНИЧЕСТВО
+                        </h4>
+
+                        <div class="catalog__main-products-info-block-text">
+                            <p>
+                                Гарантия на все автомобильные генераторы СтартВОЛЬТ 2 года. Генераторы в авто полностью
+                                соответствуют
+                                штатным изделиям по габаритным размерам и выходным характеристикам, все ключевые узлы
+                                взаимозаменяются с
+                                оригиналом. Мы гарантируем 100%-ный пооперационный контроль качества и выходную проверку
+                                всех
+                                производимых генераторов на специализированном профессиональном оборудовании D&V.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </div>
-</section>
-
+</div>
+</div>
 
         </main>
         <footer class="page-footer">

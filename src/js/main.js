@@ -12,6 +12,8 @@ import productsMenu from './productsMenu';
 import accordions from './accordions';
 import menu from './menu';
 import newsSlider from './newsSlider';
+import copyCode from './copyCode';
+import mobileFilters from './mobileFilters';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -27,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     accordions();
     menu();
     newsSlider();
+    copyCode();
+    mobileFilters();
 });
 
 window.addEventListener('load', function() {

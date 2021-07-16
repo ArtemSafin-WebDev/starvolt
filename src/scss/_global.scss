@@ -16,7 +16,7 @@
     --franklin: 'Franklin', sans-serif;
 
     @include breakpoint(mobile) {
-        --content-padding: 2.4rem;
+        --content-padding: 2rem;
     }
 }
 
