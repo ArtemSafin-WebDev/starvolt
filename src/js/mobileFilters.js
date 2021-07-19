@@ -4,6 +4,7 @@ export default function mobileFilters() {
     const btn = document.querySelector('.catalog__filters-open-btn');
     const filters = document.querySelector('.catalog__filters');
     const closeBtn = document.querySelector('.catalog__filters-close');
+    const form = document.querySelector('.catalog__filters-form')
 
     if (!btn || !filters || !closeBtn) return;
 
@@ -33,6 +34,10 @@ export default function mobileFilters() {
 
     closeBtn.addEventListener('click', event => {
         event.preventDefault();
+        closeFilters();
+    })
+
+    form.addEventListener('submit', () => {
         closeFilters();
     })
 }

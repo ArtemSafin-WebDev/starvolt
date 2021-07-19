@@ -5,15 +5,28 @@
     margin-bottom: 3.2rem;
     @include breakpoint(mobile) {
         margin-bottom: 3.4rem;
+
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     svg {
         width: 1.6rem;
         height: 1.6rem;
-        fill: #9A9A9A;
+        fill: #9a9a9a;
         margin: 0 2rem;
         flex-shrink: 0;
         margin-top: 0.3rem;
+
+        @include breakpoint(mobile) {
+            display: inline-block;
+            vertical-align: bottom;
+            margin: 0 1.5rem;
+            margin-top: 0;
+            margin-bottom: 0.1rem;
+        }
     }
 }
 
@@ -24,7 +37,7 @@
     letter-spacing: 0.02em;
 
     &.active {
-        color: #9A9A9A;
+        color: #9a9a9a;
         pointer-events: none;
     }
 

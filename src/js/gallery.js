@@ -18,6 +18,22 @@ export default function gallery() {
             speed: 700
         };
 
+        if (window.matchMedia('(max-width: 640px)').matches) {
+            mainOptions.thumbs.swiper = new Swiper(thumbsContainer, {
+                watchOverflow: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+                slidesPerView: 'auto',
+                threshold: 8,
+                speed: 700,
+              
+                loopedSlides: 5,
+                slideToClickedSlide: true,
+                spaceBetween: 10,
+                centerInsufficientSlides: true
+            });
+        }
+
         const mainSlider = new Swiper(mainContainer, mainOptions);
 
         if (!window.matchMedia('(max-width: 640px)').matches) {
