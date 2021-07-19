@@ -1,5 +1,6 @@
 .page-title {
     margin-bottom: 3.5rem;
+    padding-top: 1.6rem;
     @include breakpoint(mobile) {
         margin-bottom: 2rem;
     }
@@ -18,10 +19,11 @@
 .page-title__heading {
     font-weight: bold;
     font-size: 5.4rem;
-    line-height: 4.4rem;
+    line-height: 1;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-
+    color: #1A1919;
+    max-width: 84rem;
     @include breakpoint(mobile) {
         font-size: 3.6rem;
         line-height: 1.2;

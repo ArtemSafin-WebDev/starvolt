@@ -14,6 +14,9 @@ import menu from './menu';
 import newsSlider from './newsSlider';
 import copyCode from './copyCode';
 import mobileFilters from './mobileFilters';
+import productCodes from './productCodes';
+import gallery from './gallery';
+import productTabs from './productTabs';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -31,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
     newsSlider();
     copyCode();
     mobileFilters();
+    productCodes();
+    gallery();
+    productTabs();
 });
 
 window.addEventListener('load', function() {
