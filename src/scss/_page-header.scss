@@ -280,11 +280,16 @@
 
         fill: white;
 
-        .page-header__menu-accordion.active & {
-            transform: rotate(-90deg);
-            fill: #9A9A9A;
-        }
+        
     }
+}
+
+.page-header__menu-accordion.active > .page-header__menu-accordion-btn {
+    svg {
+        transform: rotate(-90deg);
+        fill: #9A9A9A;
+    }
+    
 }
 
 .page-header__menu-accordion-btn-text {
@@ -296,7 +301,7 @@
 }
 
 .page-header__nav-link {
-    margin-bottom: 2.5rem;
+    
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 1.2;
@@ -312,9 +317,7 @@
         fill: #9a9a9a;
         margin-right: 1.2rem;
     }
-    &:last-child {
-        margin-bottom: 0;
-    }
+    
 }
 
 .page-header__menu-accordion-content {

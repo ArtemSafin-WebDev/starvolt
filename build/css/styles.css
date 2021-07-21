@@ -1850,7 +1850,8 @@ select:-webkit-autofill:focus {
   transition: transform 0.2s, fill 0.2s, -webkit-transform 0.2s;
   fill: white;
 }
-.page-header__menu-accordion.active .page-header__menu-accordion-btn svg {
+
+.page-header__menu-accordion.active > .page-header__menu-accordion-btn svg {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   fill: #9A9A9A;
@@ -1865,7 +1866,6 @@ select:-webkit-autofill:focus {
 }
 
 .page-header__nav-link {
-  margin-bottom: 2.5rem;
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 1.2;
@@ -1885,9 +1885,6 @@ select:-webkit-autofill:focus {
       flex-shrink: 0;
   fill: #9a9a9a;
   margin-right: 1.2rem;
-}
-.page-header__nav-link:last-child {
-  margin-bottom: 0;
 }
 
 .page-header__menu-accordion-content {

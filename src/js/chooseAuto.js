@@ -8,7 +8,7 @@ export default function chooseAuto() {
 
     const filters = document.querySelector('.home-filters');
 
-    const closeBtn = document.querySelector('.home-filters__controls-close')
+    const closeBtn = document.querySelector('.home-filters__controls-close');
 
     if (!btn || !filters) return;
 
@@ -17,14 +17,18 @@ export default function chooseAuto() {
     const openFilters = () => {
         if (open) return;
         document.body.classList.add('card-filters-open');
-        disableBodyScroll(filters);
+        if (window.matchMedia('(max-width: 640px)').matches) {
+            disableBodyScroll(filters);
+        }
         open = true;
     };
 
     const closeFilters = () => {
         if (!open) return;
         document.body.classList.remove('card-filters-open');
-        clearAllBodyScrollLocks();
+        if (window.matchMedia('(max-width: 640px)').matches) {
+            clearAllBodyScrollLocks();
+        }
         open = false;
     };
 
@@ -41,5 +45,5 @@ export default function chooseAuto() {
     closeBtn.addEventListener('click', event => {
         event.preventDefault();
         closeFilters();
-    })
+    });
 }
