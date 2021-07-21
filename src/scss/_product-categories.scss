@@ -1,0 +1,87 @@
+.product-categories {
+    margin-bottom: 15rem;
+    color: #000000;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 8rem;
+    }
+}
+
+.product-categories__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 10rem;
+    grid-row-gap: 6rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 5rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    
+}
+
+.product-categories__list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-categories__card-icon {
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-bottom: 3.2rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 2rem;
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+.product-categories__card-title {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: var(--franklin-c);
+}
+
+.product-categories__card-list {
+    margin-bottom: 2rem;
+}
+
+.product-categories__card-list-item {
+    margin-bottom: 2rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.product-categories__card-link {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+   
+    .no-touch &:hover,
+    .touch &:active {
+        color: var(--primary-color);
+    }
+}
+
+.product-categories__card-show-more {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-family: var(--franklin-c);
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+}
