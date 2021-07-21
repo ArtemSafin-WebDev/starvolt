@@ -3,6 +3,9 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 3.2rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
     @include breakpoint(mobile) {
         margin-bottom: 3.4rem;
 

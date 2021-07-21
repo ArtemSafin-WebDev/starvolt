@@ -17,6 +17,7 @@ import mobileFilters from './mobileFilters';
 import productCodes from './productCodes';
 import gallery from './gallery';
 import productTabs from './productTabs';
+import otherNews from './otherNews';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     productCodes();
     gallery();
     productTabs();
+    otherNews();
 });
 
 window.addEventListener('load', function() {
