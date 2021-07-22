@@ -19,6 +19,7 @@ import gallery from './gallery';
 import productTabs from './productTabs';
 import otherNews from './otherNews';
 import chooseAuto from './chooseAuto';
+import searchProducts from './searchProducts';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     productTabs();
     otherNews();
     chooseAuto();
+    searchProducts();
 });
 
 window.addEventListener('load', function() {
