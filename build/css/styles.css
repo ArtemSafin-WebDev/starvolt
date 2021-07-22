@@ -1509,6 +1509,15 @@ select:-webkit-autofill:focus {
 .page-header {
   background-color: var(--dark-bg);
   color: white;
+  z-index: 10;
+  position: relative;
+  -webkit-transition: z-index 0.3s step-end;
+  transition: z-index 0.3s step-end;
+}
+.mobile-menu-open .page-header {
+  z-index: 700;
+  -webkit-transition: z-index 0.3s step-start;
+  transition: z-index 0.3s step-start;
 }
 
 .page-header__row {
@@ -1585,7 +1594,7 @@ select:-webkit-autofill:focus {
 @media only screen and (max-width: 640px) {
   .page-header__logo {
     grid-column: 2/3;
-    z-index: 750;
+    z-index: 450;
     position: relative;
   }
 }
@@ -1609,7 +1618,7 @@ select:-webkit-autofill:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     grid-column: 3/4;
-    z-index: 750;
+    z-index: 450;
     position: relative;
     justify-self: flex-end;
   }
@@ -1802,7 +1811,7 @@ select:-webkit-autofill:focus {
     overflow-x: hidden;
     background: var(--dark-bg);
     color: white;
-    z-index: 700;
+    z-index: 400;
     padding: 0 var(--content-padding);
     padding-top: 10rem;
     padding-bottom: 6rem;
