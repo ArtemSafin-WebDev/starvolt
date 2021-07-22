@@ -110,6 +110,12 @@
         height: auto;
         margin-bottom: 3rem;
         margin-top: 3rem;
+
+        @include breakpoint(mobile) {
+            width: calc(100vw - var(--sb-width, 0));
+            margin-left: calc(-1 * var(--content-padding));
+            max-width: none;
+        }
         &:first-child {
             margin-top: 0;
         }

@@ -14,16 +14,13 @@
         height: 100%;
         fill: var(--text-color);
         transition: fill 0.2s;
-        
     }
 
     .no-touch &:hover,
     .touch &:active {
-
         svg {
             fill: var(--primary-color);
         }
-        
     }
 }
 
@@ -36,6 +33,33 @@
         width: 50%;
         flex-grow: 1;
     }
+}
+
+.pagination__form {
+    margin-right: 3rem;
+    padding: 1rem 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+    color: #9A9A9A;
+    display: flex;
+    align-items: baseline;
+    width: 6.2rem;
+    flex-shrink: 0;
+    border-bottom: 1px solid #9A9A9A;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.pagination__form-input {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+    width: 30%;
+    flex-grow: 1;
+    padding-left: .7rem;
 }
 
 .pagination__next {

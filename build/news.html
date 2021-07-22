@@ -643,6 +643,13 @@
                         </a>
                     </li>
                 </ul>
+                <div class="news-catalog__mobile-filter">
+                    <select name="category" class="js-custom-select">
+                        <option value="Все темы">Все темы</option>
+                        <option value="Мероприятия">Мероприятия</option>
+                        <option value=" Новинки">Новинки</option>
+                    </select>
+                </div>
             </div>
             <div class="news-catalog__right-col">
                 <ul class="news-catalog__list">
@@ -774,9 +781,11 @@
                         <a href="#" class="pagination__link">
                             4
                         </a>
-                        <a href="#" class="pagination__link">
-                            ...
-                        </a>
+                        <form action="/" method="GET" class="pagination__form">
+                            №
+                            <input type="tel" class="pagination__form-input js-numeric-input">
+                        </form>
+
                         <a href="#" class="pagination__link">
                             32
                         </a>
