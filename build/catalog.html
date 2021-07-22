@@ -37,15 +37,48 @@
                                         </div>
                                         <div class="page-header__menu-accordion-content js-accordion-content">
                                             <div class="page-header__menu-accordion-content-inner">
-                                                <a href="#" class="page-header__nav-link">
-                                                    Категория 1
-                                                </a>
-                                                <a href="#" class="page-header__nav-link">
-                                                    Категория 2
-                                                </a>
-                                                <a href="#" class="page-header__nav-link">
-                                                    Категория 3
-                                                </a>
+                                                <ul class="page-header__menu-list">
+                                                    <li class="page-header__menu-list-item">
+                                                        <div class="page-header__menu-accordion js-accordion">
+                                                            <div class="page-header__menu-accordion-btn js-accordion-btn">
+                                                                <svg width="14" height="14" aria-hidden="true"
+                                                                    class="icon-arrow-down">
+                                                                    <use xlink:href="#arrow-down"></use>
+                                                                </svg>
+                                                                <div class="page-header__menu-accordion-btn-text">
+                                                                    Второй уровень
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="page-header__menu-accordion-content js-accordion-content">
+                                                                <div class="page-header__menu-accordion-content-inner">
+                                                                    <ul class="page-header__menu-list">
+                                                                        <li class="page-header__menu-list-item">
+                                                                            <a href="#" class="page-header__nav-link">
+                                                                                ссылка на втором уровне
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="page-header__menu-list-item">
+                                                                            <a href="#" class="page-header__nav-link">
+                                                                                ссылка на втором уровне
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="page-header__menu-list-item">
+                                                                            <a href="#" class="page-header__nav-link">
+                                                                                ссылка на втором уровне
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="page-header__menu-list-item">
+                                                                            <a href="#" class="page-header__nav-link">
+                                                                                ссылка на втором уровне
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -398,6 +431,162 @@
                     Искать по VIN
                 </a>
             </div>
+        </div>
+        <div class="home-filters">
+            <div class="home-filters__controls">
+                <h4 class="home-filters__controls-title">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-filters">
+                        <use xlink:href="#filters"></use>
+                    </svg>
+                    Фильтр
+                </h4>
+                <button class="home-filters__controls-close" type="button">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </button>
+            </div>
+            <form action="/" method="GET" class="home-filters__row">
+                <div class="home-filters__select-wrapper">
+                    <div class="custom-select">
+
+
+                        <select name="category" class="js-custom-select">
+                            <option value="" placeholder>
+                                Категория
+                            </option>
+                            <option value="1">
+                                Категория 1
+                            </option>
+                            <option value="2">
+                                Категория 2
+                            </option>
+                            <option value="3">
+                                Категория 3
+                            </option>
+                            <option value="4">
+                                Категория 4
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="home-filters__select-wrapper">
+                    <div class="custom-select">
+
+
+                        <select name="trademark" class="js-custom-select">
+                            <option value="" placeholder>
+                                Марка
+                            </option>
+                            <option value="1">
+                                Марка 1
+                            </option>
+                            <option value="2">
+                                Марка 2
+                            </option>
+                            <option value="3">
+                                Марка 3
+                            </option>
+                            <option value="4">
+                                Марка 4
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="home-filters__select-wrapper">
+                    <div class="custom-select">
+
+
+                        <select name="model" class="js-custom-select">
+                            <option value="" placeholder>
+                                Модель
+                            </option>
+                            <option value="1">
+                                Модель 1
+                            </option>
+                            <option value="2">
+                                Модель 2
+                            </option>
+                            <option value="3">
+                                Модель 3
+                            </option>
+                            <option value="4">
+                                Модель 4
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="home-filters__select-wrapper">
+                    <div class="custom-select">
+
+
+                        <select name="modification" class="js-custom-select">
+                            <option value="" placeholder>
+                                Модификация
+                            </option>
+                            <option value="1">
+                                Модификация 1
+                            </option>
+                            <option value="2">
+                                Модификация 2
+                            </option>
+                            <option value="3">
+                                Модификация 3
+                            </option>
+                            <option value="4">
+                                Модификация 4
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="home-filters__select-wrapper">
+                    <div class="custom-select">
+
+
+                        <select name="type" class="js-custom-select">
+                            <option value="" placeholder>
+                                Тип топлива
+                            </option>
+                            <option value="1">
+                                Тип топлива 1
+                            </option>
+                            <option value="2">
+                                Тип топлива 2
+                            </option>
+                            <option value="3">
+                                Тип топлива 3
+                            </option>
+                            <option value="4">
+                                Тип топлива 4
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="home-filters__select-wrapper">
+                    <div class="custom-select">
+                        <select name="period" class="js-custom-select">
+                            <option value="" placeholder>
+                                Период выпуска
+                            </option>
+                            <option value="1">
+                                Период выпуска 1
+                            </option>
+                            <option value="2">
+                                Период выпуска 2
+                            </option>
+                            <option value="3">
+                                Период выпуска 3
+                            </option>
+                            <option value="4">
+                                Период выпуска 4
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="home-filters__submit">
+                    Найти
+                </button>
+            </form>
         </div>
     </div>
 </section>

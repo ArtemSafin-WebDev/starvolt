@@ -159,6 +159,16 @@
         margin-top: 3.4rem;
         border-radius: .3rem;
 
+        &::after {
+            content: '';
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            align-self: flex-start;
+            margin-left: 0.5rem;
+        }
+
         &:link,
         &:visited {
             color: var(--primary-color);

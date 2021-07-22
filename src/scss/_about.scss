@@ -7,6 +7,10 @@
 
 .about__row {
     display: flex;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
 }
 
 .about__left-col {
@@ -18,7 +22,8 @@
         width: 100%;
         margin: 0;
         flex-shrink: 0;
-        margin-bottom: 2.5rem;
+
+        order: 3;
     }
 }
 
@@ -28,6 +33,7 @@
     @include breakpoint(mobile) {
         width: 100%;
         flex-grow: 0;
+        margin-bottom: 3.5rem;
     }
 }
 
@@ -38,6 +44,10 @@
     padding: 1.2rem;
     width: 100%;
     max-width: 26rem;
+
+    @include breakpoint(mobile) {
+        max-width: none;
+    }
 }
 
 .about__guarantee-heading {
@@ -53,6 +63,10 @@
     line-height: 2rem;
     letter-spacing: 0.02em;
     margin-bottom: 4rem;
+
+    @include breakpoint(mobile) {
+        max-width: 26rem;
+    }
 }
 
 .about__guarantee-image {
@@ -67,44 +81,74 @@
 }
 
 .about__navigation {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 5rem;
-    margin-top: -2rem;
+    @include breakpointMF(small-tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+        margin-top: -2rem;
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
 }
 
 .about__navigation-link {
-    padding: 2rem 2.2rem;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    position: relative;
-    font-family: var(--franklin-c);
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        bottom: 0;
-        height: 0.2rem;
-        background-color: var(--primary-color);
-        transition: opacity 0.2s;
-        opacity: 0;
-    }
-
-    .no-touch &:hover,
-    .touch &:active {
-        color: var(--primary-color);
-    }
-
-    &.active {
-        color: var(--primary-color);
-
+    @include breakpointMF(small-tablet) {
+        padding: 2rem 2.2rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        position: relative;
+        font-family: var(--franklin-c);
         &::after {
-            opacity: 1;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            height: 0.2rem;
+            background-color: var(--primary-color);
+            transition: opacity 0.2s;
+            opacity: 0;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            color: var(--primary-color);
+        }
+
+        &.active {
+            color: var(--primary-color);
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    @include breakpoint(mobile) {
+        margin: 0 calc(-1 * var(--content-padding));
+        border-bottom: 1px solid #ebebeb;
+        padding: 1.2rem var(--content-padding);
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        display: block;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            color: var(--primary-color);
+        }
+        &.active {
+            color: var(--primary-color);
         }
     }
 }
@@ -145,6 +189,12 @@
     font-size: 2.8rem;
     line-height: 1.2;
     margin-bottom: 3rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 2rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
 }
 
 .about__main-products-list {
@@ -178,6 +228,11 @@
     font-size: 2.8rem;
     line-height: 1.2;
     margin-bottom: 3rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 2rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
 }
 
 .about__ideology-list-item {
@@ -210,14 +265,12 @@
         color: #03a448;
         margin-right: 2.5rem;
         flex-shrink: 0;
-        
     }
 }
 
 .about__ideology-text {
-    padding-top: .7rem;
+    padding-top: 0.6rem;
 }
-
 
 .about__content-wrapper {
     width: 100%;
