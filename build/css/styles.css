@@ -2126,17 +2126,20 @@ select:-webkit-autofill:focus {
         flex-shrink: 1;
     margin: 0;
   }
+  .page-footer__social-list-item--large {
+    grid-column: span 2;
+  }
 }
 .page-footer__social-list-item:last-child {
   margin-right: 0;
 }
 
 .page-footer__social-link {
-  width: 3.8rem;
+  min-width: 3.8rem;
   height: 3.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2147,7 +2150,7 @@ select:-webkit-autofill:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
+  border-radius: 4rem;
   background-color: white;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
@@ -2161,6 +2164,11 @@ select:-webkit-autofill:focus {
   fill: var(--text-color);
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
+}
+.page-footer__social-link img {
+  height: 1.6rem;
+  width: auto;
+  margin: 0 1rem;
 }
 .no-touch .page-footer__social-link:hover, .touch .page-footer__social-link:active {
   -webkit-transform: scale(0.9);
