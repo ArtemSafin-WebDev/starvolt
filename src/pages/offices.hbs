@@ -1,0 +1,288 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+{{> search-panel }}
+
+<div class="page-title">
+    <div class="container">
+
+
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumbs__link">
+                главная
+            </a>
+            <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+                <use xlink:href="#breadcrumbs-arrow"></use>
+            </svg>
+            <a href="#" class="breadcrumbs__link active">
+                точки продаж
+            </a>
+        </div>
+        <div class="page-title__row">
+            <h1 class="page-title__heading">
+                Точки продаж
+            </h1>
+
+        </div>
+    </div>
+</div>
+
+<div class="offices">
+    <div class="container">
+        <div class="offices__map-wrapper">
+            <div class="offices__map js-map">
+
+            </div>
+        </div>
+
+        <form action="/" method="GET" class="offices__filters">
+            <div class="offices__filters-elements">
+                <div class="offices__filters-element">
+                    <div class="custom-select">
+                        <select name="country" class="js-custom-select">
+                            <option value="" placeholder>
+                                Все страны
+                            </option>
+                            <option value="1">
+                                Россия
+                            </option>
+                            <option value="2">
+                                Казахстан
+                            </option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="offices__filters-element">
+                    <div class="custom-select">
+                        <select name="city" class="js-custom-select">
+                            <option value="" placeholder>
+                                Все города
+                            </option>
+                            <option value="1">
+                                Москва
+                            </option>
+                            <option value="2">
+                                Казань
+                            </option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="offices__filters-element offices__filters-element--mobile">
+                    <div class="custom-select">
+                        <select name="city" class="js-custom-select">
+                            <option value="" placeholder>
+                                Дистрибьюторы
+                            </option>
+                            <option value="1">
+                                Дистрибьюторы
+                            </option>
+                            <option value="2">
+                                Дистрибьюторы
+                            </option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="offices__filters-element">
+                    <label class="offices__filters-search">
+                        <input type="search" class="offices__filters-search-input" placeholder="Поиск по названию">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-search">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="offices__filters-nav">
+                <a href="#" class="offices__filters-nav-link active">
+                    Дистрибьюторы
+                </a>
+                <a href="#" class="offices__filters-nav-link">
+                    розница
+                </a>
+                <a href="#" class="offices__filters-nav-link">
+                    онлайн
+                </a>
+            </div>
+        </form>
+        <div class="offices__results-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Название
+                        </th>
+                        <th>
+                            Город
+                        </th>
+                        <th>
+                            Адрес
+                        </th>
+                        <th>
+                            Страна
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            IXORA
+                        </td>
+                        <td>
+                            Арзамас
+                        </td>
+                        <td>
+                            <div class="offices__results-contacts">
+                                <a href="#" class="offices__results-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                        <use xlink:href="#location"></use>
+                                    </svg>
+                                    <div class="offices__results-contacts-link-text">
+                                        Россия, Тамбов, ул. К.Маркса, 32
+                                    </div>
+                                </a>
+                                <a href="mailto:+79181111522" class="offices__results-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                        <use xlink:href="#phone"></use>
+                                    </svg>
+                                    <div class="offices__results-contacts-link-text">
+                                        +7 (918) 111-15-22
+                                    </div>
+                                </a>
+                                <div class="offices__results-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                        <use xlink:href="#clock"></use>
+                                    </svg>
+                                    <div class="offices__results-contacts-link-text">
+                                        Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Россия
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            IXORA
+                        </td>
+                        <td>
+                            Арзамас
+                        </td>
+                        <td>
+                            <div class="offices__results-contacts">
+                                <a href="#" class="offices__results-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                        <use xlink:href="#location"></use>
+                                    </svg>
+                                    <div class="offices__results-contacts-link-text">
+                                        Россия, Тамбов, ул. К.Маркса, 32
+                                    </div>
+                                </a>
+                                <a href="mailto:+79181111522" class="offices__results-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                        <use xlink:href="#phone"></use>
+                                    </svg>
+                                    <div class="offices__results-contacts-link-text">
+                                        +7 (918) 111-15-22
+                                    </div>
+                                </a>
+                                <div class="offices__results-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                        <use xlink:href="#clock"></use>
+                                    </svg>
+                                    <div class="offices__results-contacts-link-text">
+                                        Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Россия
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            IXORA
+                        </td>
+                        <td>
+                            Арзамас
+                        </td>
+                        <td>
+                            <div class="offices__results-contacts">
+                                <a href="#" class="offices__results-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                        <use xlink:href="#location"></use>
+                                    </svg>
+                                    <div class="offices__results-contacts-link-text">
+                                        Россия, Тамбов, ул. К.Маркса, 32
+                                    </div>
+                                </a>
+                                <a href="mailto:+79181111522" class="offices__results-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                        <use xlink:href="#phone"></use>
+                                    </svg>
+                                    <div class="offices__results-contacts-link-text">
+                                        +7 (918) 111-15-22
+                                    </div>
+                                </a>
+                                <div class="offices__results-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                        <use xlink:href="#clock"></use>
+                                    </svg>
+                                    <div class="offices__results-contacts-link-text">
+                                        Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Россия
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination offices__pagination">
+            <a href="#" class="pagination__prev">
+                <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+            </a>
+            <div class="pagination__links">
+                <a href="#" class="pagination__link active">
+                    1
+                </a>
+                <a href="#" class="pagination__link">
+                    2
+                </a>
+                <a href="#" class="pagination__link">
+                    3
+                </a>
+                <a href="#" class="pagination__link">
+                    4
+                </a>
+                <form action="/" method="GET" class="pagination__form">
+                    №
+                    <input type="tel" class="pagination__form-input js-numeric-input">
+                </form>
+
+                <a href="#" class="pagination__link">
+                    32
+                </a>
+            </div>
+            <a href="#" class="pagination__next">
+                <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+{{/content}}
+{{/extend}}
