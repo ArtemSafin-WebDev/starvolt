@@ -1,0 +1,259 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+{{> search-panel }}
+
+
+
+
+<div class="not-found">
+    <div class="container">
+        <div class="not-found__content">
+
+
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs__link">
+                    главная
+                </a>
+
+            </div>
+
+            <img src="img/404.png" alt="" class="not-found__icon">
+            <h1 class="not-found__heading">
+                Страница не найдена
+            </h1>
+            <div class="not-found__text">
+                <p>
+                    К сожалению, такой страницы нет. Возможно, вы перешли по старой ссылке или ввели неправильный адрес.
+                </p>
+            </div>
+            <a href="#" class="not-found__back-link">
+                Перейдите на главную
+            </a>
+            <form action="/" method="GET" class="not-found__search">
+                <h2 class="not-found__search-heading">
+                    Попробуйте воспользоваться поиском
+                </h2>
+                <div class="not-found__search-input-wrapper">
+                    <input type="search" class="not-found__search-input" name="q"
+                        placeholder="Поиск по названию или артикулу">
+                    <button class="not-found__search-input-btn" type="submit">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-search">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<section class="categories">
+    <div class="container">
+        <h2 class="categories__heading">
+            Категории
+        </h2>
+        <ul class="categories__list">
+            <li class="categories__list-item categories__list-item--large">
+                <a href="#" class="categories__card">
+
+
+                    <picture>
+                        <source data-srcset="img/categories/1-mobile.jpg" media="(max-width: 640px)">
+                        <img data-src="img/categories/1.jpg" alt="" class="lazyload categories__card-image"
+                            data-sizes="auto">
+                    </picture>
+                    <h4 class="categories__card-title">
+                        Генераторы
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/2.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Клапаны фаз ГРМ
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/3.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Катушки
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/4.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Катушки
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/5.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Детали системы стеклоочистителя
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item categories__list-item--large">
+                <a href="#" class="categories__card">
+                    <picture>
+                        <source data-srcset="img/categories/1-mobile.jpg" media="(max-width: 640px)">
+                        <img data-src="img/categories/1.jpg" alt="" class="lazyload categories__card-image"
+                            data-sizes="auto">
+                    </picture>
+                    <h4 class="categories__card-title">
+                        Стартеры
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/7.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Клеммы
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/8.jpg" alt="" class=" lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Детали системы стеклоочистителя
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/9.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Свечи накаливания
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/10.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Насосы отопителя и охлаждения
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/11.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Свечи накаливания
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/12.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Насосы
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="categories__card">
+                    <img data-src="img/categories/13.jpg" alt="" class="lazyload categories__card-image">
+                    <h4 class="categories__card-title">
+                        Лямбда зонды
+
+                        <div class="categories__card-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </h4>
+                </a>
+            </li>
+           
+        </ul>
+      
+    </div>
+</section>
+
+
+{{/content}}
+{{/extend}}

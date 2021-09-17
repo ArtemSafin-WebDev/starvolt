@@ -1,0 +1,111 @@
+.search {
+    margin-bottom: 10rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+    }
+}
+
+.search__found-categories {
+    margin-bottom: 4.5rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    row-gap: 3rem;
+    flex-wrap: wrap;
+
+    @include breakpoint(mobile) {
+        gap: 3rem;
+        row-gap: 1.5rem;
+    }
+}
+
+.search__found-categories-link {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-right: 6rem;
+    white-space: nowrap;
+    @supports (gap: 6rem) {
+        margin: 0;
+    }
+
+    @include breakpoint(mobile) {
+        margin-right: 3rem;
+        font-size: 1.6rem;
+        @supports (gap: 3rem) {
+            margin: 0;
+        }
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.search__found-categories-link-count {
+    color: #afafaf;
+}
+
+.search__results-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 3.2rem;
+    grid-row-gap: 2.4rem;
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.search__results-list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.search__edit-query {
+    margin-bottom: 4rem;
+}
+
+.search__edit-query-heading {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: #9a9a9a;
+    margin-bottom: 1.5rem;
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        margin-bottom: .5rem;
+    }
+}
+
+.search__edit-query-input {
+    border-bottom: 1px solid #9a9a9a;
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    padding: .5rem 0;
+    font-weight: 500;
+    line-height: 1.2;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+    }
+}
+
+
+.search__suggested-categories {
+    margin-bottom: 3.2rem;
+    color: black;
+
+    .categories__heading {
+        @include breakpoint(mobile) {
+            font-size: 2.4rem;
+            line-height: 1.2;
+        }
+    }
+}

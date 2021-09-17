@@ -1,0 +1,166 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+{{> search-panel }}
+
+<div class="page-title">
+    <div class="container">
+
+
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumbs__link">
+                главная
+            </a>
+            <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+                <use xlink:href="#breadcrumbs-arrow"></use>
+            </svg>
+            <a href="#" class="breadcrumbs__link active">
+                контакты
+            </a>
+        </div>
+        <div class="page-title__row">
+            <h1 class="page-title__heading">
+                Контакты
+            </h1>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="contacts">
+    <div class="container">
+        <div class="contacts__row">
+            <div class="contacts__col">
+                <ul class="contacts__info-cards-list">
+                    <li class="contacts__info-cards-list-item">
+                        <div class="contacts__info-card">
+                            <h4 class="contacts__info-card-title">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-placemark">
+                                    <use xlink:href="#placemark"></use>
+                                </svg>
+                                Адрес
+                            </h4>
+                            <div class="contacts__info-card-text">
+                                Санкт-Петербург, Московское шоссе, 177
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts__info-cards-list-item">
+                        <div class="contacts__info-card">
+                            <h4 class="contacts__info-card-title">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-mail">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                                Адрес для корреспонденции
+                            </h4>
+                            <div class="contacts__info-card-text">
+                                192102, Санкт-Петербург, а/я 210, до востребования
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts__info-cards-list-item">
+                        <div class="contacts__info-card">
+                            <h4 class="contacts__info-card-title">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-e-mail">
+                                    <use xlink:href="#e-mail"></use>
+                                </svg>
+                                Электронная почта
+                            </h4>
+                            <div class="contacts__info-card-text">
+                                <a href="mailto:info@startvolt.com"> info@startvolt.com</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts__info-cards-list-item">
+                        <div class="contacts__info-card">
+                            <h4 class="contacts__info-card-title">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-tel">
+                                    <use xlink:href="#tel"></use>
+                                </svg>
+                                Телефон
+                            </h4>
+                            <div class="contacts__info-card-text">
+                                <a href="tel:+78005558965"> 8-800-555-89-65</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts__col">
+                <a href="#" class="contacts__offices">
+                    <img src="img/points.jpg" alt="" class="contacts__offices-image">
+                    <div class="contacts__offices-btn">
+                        Смотреть точки продаж
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="contacts__row">
+            <div class="contacts__col">
+                <form action="/" method="POST" class="contacts__form">
+                    <h2 class="contacts__heading">
+                        Остались вопросы?
+                    </h2>
+                    <div class="contacts__heading-text">
+                        Заполните форму ниже
+                    </div>
+                    <div class="contacts__fields">
+                        <div class="contacts__field">
+                            <label class="contacts__field-label">
+                                <span class="contacts__field-label-text">
+                                    Имя*
+                                </span>
+                                <input type="text" class="contacts__field-input"
+                                    placeholder="Введите вашу должность или имя" required>
+                            </label>
+                        </div>
+                        <div class="contacts__field">
+                            <label class="contacts__field-label">
+                                <span class="contacts__field-label-text">
+                                    Электронная почта*
+                                </span>
+                                <input type="email" class="contacts__field-input" placeholder="@" required>
+                            </label>
+                        </div>
+                        <div class="contacts__field contacts__field--fullwidth">
+                            <label class="contacts__field-label">
+                                <span class="contacts__field-label-text">
+                                    Сообщение*
+                                </span>
+                                <textarea name="comment" class="contacts__field-input" required></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="contacts__form-submit" type="submit">
+
+                        Отправить
+                    </button>
+                </form>
+            </div>
+            <div class="contacts__col">
+                <div class="contacts__apply-for-office">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-map">
+                        <use xlink:href="#map"></use>
+                    </svg>
+                    <div class="contacts__apply-for-office-content">
+                        <div class="contacts__apply-for-office-text">
+                            <p>
+                                Хотите разместить свою точку продаж? Заполните небольшую анкету – мы свяжемся с вами в
+                                ближайшее время.
+                            </p>
+                        </div>
+                        <a href="#" class="contacts__apply-for-office-link">
+                            Отправить заявку
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{/content}}
+{{/extend}}
