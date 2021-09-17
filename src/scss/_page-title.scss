@@ -24,6 +24,10 @@
     text-transform: uppercase;
     color: #1a1919;
     max-width: 84rem;
+
+    &--fullwidth {
+        max-width: none;
+    }
     @include breakpoint(mobile) {
         font-size: 3.6rem;
         line-height: 1;
