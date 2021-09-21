@@ -4098,6 +4098,9 @@ select:-webkit-autofill:focus {
   color: #1a1919;
   max-width: 84rem;
 }
+.page-title__heading--fullwidth {
+  max-width: none;
+}
 @media only screen and (max-width: 640px) {
   .page-title__heading {
     font-size: 3.6rem;
