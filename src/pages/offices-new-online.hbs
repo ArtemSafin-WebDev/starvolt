@@ -1,0 +1,487 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+{{> search-panel }}
+
+<div class="page-title">
+    <div class="container">
+
+
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumbs__link">
+                главная
+            </a>
+            <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+                <use xlink:href="#breadcrumbs-arrow"></use>
+            </svg>
+            <a href="#" class="breadcrumbs__link active">
+                точки продаж
+            </a>
+        </div>
+        <div class="page-title__row">
+            <h1 class="page-title__heading">
+                Точки продаж
+            </h1>
+            <div class="page-title__register-office">
+                <svg width="14" height="14" aria-hidden="true" class="icon-map">
+                    <use xlink:href="#map"></use>
+                </svg>
+                <div class="page-title__register-office-content">
+                    <div class="page-title__register-office-text">
+                        <p>
+                            Хотите разместить свою точку продаж? Заполните небольшую анкету – мы свяжемся с вами в
+                            ближайшее время.
+                        </p>
+                    </div>
+                    <a href="#" class="page-title__register-office-link">
+                        Отправить заявку
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offices-new">
+    <div class="container">
+        <div class="offices-new__map-wrapper">
+            <div class="offices-new__map-inner">
+                <div class="offices-new__map js-map">
+
+                </div>
+            </div>
+            <div class="offices-new__map-modes">
+                <a href="#" class="offices-new__map-modes-link active">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-mode-map">
+                        <use xlink:href="#mode-map"></use>
+                    </svg>
+                    <span class="offices-new__map-modes-text">
+                        На карте
+                    </span>
+
+                </a>
+                <a href="#" class="offices-new__map-modes-link">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-mode-list">
+                        <use xlink:href="#mode-list"></use>
+                    </svg>
+
+                    <span class="offices-new__map-modes-text">
+                        списком
+                    </span>
+                </a>
+            </div>
+            <div class="offices-new__map-panel">
+                <div class="offices-new__map-panel-nav">
+                    <a href="#" class="offices-new__map-panel-nav-link">
+                        Дистрибьюторы
+                    </a>
+                    <a href="#" class="offices-new__map-panel-nav-link">
+                        розница
+                    </a>
+                    <a href="#" class="offices-new__map-panel-nav-link active">
+                        онлайн
+                    </a>
+                </div>
+                <form action="/" method="GET" class="offices-new__map-panel-filters offices-new__map-panel-filters--online">
+                    <div class="offices-new__search-wrapper">
+                        <input type="search" name="q" class="offices-new__search-input" placeholder="По названию">
+                        <button type="submit" class="offices-new__search-submit">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-search">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="offices-new__map-panel-results">
+                    <ul class="offices-new__map-panel-results-list">
+                        <li class="offices-new__map-panel-results-list-item">
+                            <div class="offices-new__map-panel-results-card">
+                                <h4 class="offices-new__map-panel-results-card-title">
+                                    IXORA
+                                </h4>
+                                <div class="offices-new__map-panel-results-card-info">
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item offices-new__map-panel-results-card-info-item--website">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-globe">
+                                            <use xlink:href="#globe"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            220-volt.ru
+                                        </div>
+                                    </a>
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                            <use xlink:href="#location"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            Россия, Тамбов, ул. К.Маркса, 32
+                                        </div>
+                                    </a>
+                                    <a href="tel:79181111522" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            +7 (918) 111-15-22
+                                        </div>
+                                    </a>
+                                    <div class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offices-new__map-panel-results-list-item">
+                            <div class="offices-new__map-panel-results-card">
+                                <h4 class="offices-new__map-panel-results-card-title">
+                                    IXORA
+                                </h4>
+                                <div class="offices-new__map-panel-results-card-info">
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item offices-new__map-panel-results-card-info-item--website">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-globe">
+                                            <use xlink:href="#globe"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            220-volt.ru
+                                        </div>
+                                    </a>
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                            <use xlink:href="#location"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            Россия, Тамбов, ул. К.Маркса, 32
+                                        </div>
+                                    </a>
+                                    <a href="tel:79181111522" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            +7 (918) 111-15-22
+                                        </div>
+                                    </a>
+                                    <div class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offices-new__map-panel-results-list-item">
+                            <div class="offices-new__map-panel-results-card">
+                                <h4 class="offices-new__map-panel-results-card-title">
+                                    IXORA
+                                </h4>
+                                <div class="offices-new__map-panel-results-card-info">
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item offices-new__map-panel-results-card-info-item--website">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-globe">
+                                            <use xlink:href="#globe"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            220-volt.ru
+                                        </div>
+                                    </a>
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                            <use xlink:href="#location"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            Россия, Тамбов, ул. К.Маркса, 32
+                                        </div>
+                                    </a>
+                                    <a href="tel:79181111522" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            +7 (918) 111-15-22
+                                        </div>
+                                    </a>
+                                    <div class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offices-new__map-panel-results-list-item">
+                            <div class="offices-new__map-panel-results-card">
+                                <h4 class="offices-new__map-panel-results-card-title">
+                                    IXORA
+                                </h4>
+                                <div class="offices-new__map-panel-results-card-info">
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item offices-new__map-panel-results-card-info-item--website">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-globe">
+                                            <use xlink:href="#globe"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            220-volt.ru
+                                        </div>
+                                    </a>
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                            <use xlink:href="#location"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            Россия, Тамбов, ул. К.Маркса, 32
+                                        </div>
+                                    </a>
+                                    <a href="tel:79181111522" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            +7 (918) 111-15-22
+                                        </div>
+                                    </a>
+                                    <div class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offices-new__map-panel-results-list-item">
+                            <div class="offices-new__map-panel-results-card">
+                                <h4 class="offices-new__map-panel-results-card-title">
+                                    IXORA
+                                </h4>
+                                <div class="offices-new__map-panel-results-card-info">
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item offices-new__map-panel-results-card-info-item--website">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-globe">
+                                            <use xlink:href="#globe"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            220-volt.ru
+                                        </div>
+                                    </a>
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                            <use xlink:href="#location"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            Россия, Тамбов, ул. К.Маркса, 32
+                                        </div>
+                                    </a>
+                                    <a href="tel:79181111522" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            +7 (918) 111-15-22
+                                        </div>
+                                    </a>
+                                    <div class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offices-new__map-panel-results-list-item">
+                            <div class="offices-new__map-panel-results-card">
+                                <h4 class="offices-new__map-panel-results-card-title">
+                                    IXORA
+                                </h4>
+                                <div class="offices-new__map-panel-results-card-info">
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item offices-new__map-panel-results-card-info-item--website">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-globe">
+                                            <use xlink:href="#globe"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            220-volt.ru
+                                        </div>
+                                    </a>
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                            <use xlink:href="#location"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            Россия, Тамбов, ул. К.Маркса, 32
+                                        </div>
+                                    </a>
+                                    <a href="tel:79181111522" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            +7 (918) 111-15-22
+                                        </div>
+                                    </a>
+                                    <div class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offices-new__map-panel-results-list-item">
+                            <div class="offices-new__map-panel-results-card">
+                                <h4 class="offices-new__map-panel-results-card-title">
+                                    IXORA
+                                </h4>
+                                <div class="offices-new__map-panel-results-card-info">
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item offices-new__map-panel-results-card-info-item--website">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-globe">
+                                            <use xlink:href="#globe"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            220-volt.ru
+                                        </div>
+                                    </a>
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                            <use xlink:href="#location"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            Россия, Тамбов, ул. К.Маркса, 32
+                                        </div>
+                                    </a>
+                                    <a href="tel:79181111522" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            +7 (918) 111-15-22
+                                        </div>
+                                    </a>
+                                    <div class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offices-new__map-panel-results-list-item">
+                            <div class="offices-new__map-panel-results-card">
+                                <h4 class="offices-new__map-panel-results-card-title">
+                                    IXORA
+                                </h4>
+                                <div class="offices-new__map-panel-results-card-info">
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item offices-new__map-panel-results-card-info-item--website">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-globe">
+                                            <use xlink:href="#globe"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            220-volt.ru
+                                        </div>
+                                    </a>
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                            <use xlink:href="#location"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            Россия, Тамбов, ул. К.Маркса, 32
+                                        </div>
+                                    </a>
+                                    <a href="tel:79181111522" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            +7 (918) 111-15-22
+                                        </div>
+                                    </a>
+                                    <div class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offices-new__map-panel-results-list-item">
+                            <div class="offices-new__map-panel-results-card">
+                                <h4 class="offices-new__map-panel-results-card-title">
+                                    IXORA
+                                </h4>
+                                <div class="offices-new__map-panel-results-card-info">
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item offices-new__map-panel-results-card-info-item--website">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-globe">
+                                            <use xlink:href="#globe"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            220-volt.ru
+                                        </div>
+                                    </a>
+                                    <a href="#" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-location">
+                                            <use xlink:href="#location"></use>
+                                        </svg>
+                                        <div class="offices-new__map-panel-results-card-info-item-text">
+                                            Россия, Тамбов, ул. К.Маркса, 32
+                                        </div>
+                                    </a>
+                                    <a href="tel:79181111522" class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            +7 (918) 111-15-22
+                                        </div>
+                                    </a>
+                                    <div class="offices-new__map-panel-results-card-info-item">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <div class="offices__results-contacts-link-text">
+                                            Пн-Пт с 9:00 до 19:00, Сб с 9:00 до 17:00, Вс - выходной
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                       
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{/content}}
+{{/extend}}

@@ -1,6 +1,6 @@
 .page-title {
     margin-bottom: 3.5rem;
-  
+
     @include breakpoint(mobile) {
         margin-bottom: 2rem;
     }
@@ -269,7 +269,6 @@
         border-top: 1px solid #e9e9e9;
 
         @include breakpoint(mobile) {
-            
         }
 
         &:first-child {
@@ -312,5 +311,58 @@
         @include breakpoint(mobile) {
             max-height: 22rem;
         }
+    }
+}
+
+.page-title__register-office {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
+    width: 34rem;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin: 0;
+        margin-top: 2rem;
+    }
+    
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        flex-shrink: 0;
+        margin-right: 2.5rem;
+        fill: black;
+    }
+}
+
+.page-title__register-office-content {
+    width: 40%;
+    flex-grow: 1;
+}
+
+.page-title__register-office-text {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 2rem;
+}
+
+.page-title__register-office-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-family: var(--franklin-c);
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        text-decoration: underline;
     }
 }

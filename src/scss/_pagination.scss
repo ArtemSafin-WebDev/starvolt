@@ -2,6 +2,10 @@
     margin-top: 5rem;
     display: flex;
     align-items: center;
+
+    &--centered {
+        justify-content: center;
+    }
 }
 
 .pagination__prev {
@@ -27,6 +31,8 @@
 .pagination__links {
     display: flex;
     align-items: center;
+
+    
 
     @include breakpoint(mobile) {
         // justify-content: space-between;
