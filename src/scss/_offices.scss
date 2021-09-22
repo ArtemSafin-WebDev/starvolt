@@ -240,18 +240,21 @@
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .popover-content {
     font-weight: 500;
     font-size: 1.6rem;
-    line-height: 1.5;
+    line-height: 2;
     letter-spacing: 0.02em;
     color: #62646a;
+
+    
     a {
         color: var(--text-color);
         display: block;
+      
 
         .no-touch &:hover,
         .touch &:active {
