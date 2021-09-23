@@ -6151,6 +6151,7 @@ select:-webkit-autofill:focus {
 @media only screen and (max-width: 640px) {
   .product-categories {
     margin-bottom: 8rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -6163,9 +6164,8 @@ select:-webkit-autofill:focus {
 @media only screen and (max-width: 640px) {
   .product-categories__list {
     grid-gap: 5rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 2rem;
-    grid-row-gap: 4rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 4.8rem;
   }
 }
 
@@ -6260,6 +6260,17 @@ select:-webkit-autofill:focus {
           flex-direction: column;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 640px) {
+  .product-categories__new-card-category-link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .no-touch .product-categories__new-card-category-link[href]:hover, .touch .product-categories__new-card-category-link[href]:active {
   color: var(--primary-color);
 }
@@ -6276,7 +6287,8 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (max-width: 640px) {
   .product-categories__new-card-icon {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    margin-right: 3.2rem;
     width: 6rem;
     height: 6rem;
   }
