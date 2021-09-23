@@ -20,6 +20,7 @@ import productTabs from './productTabs';
 import otherNews from './otherNews';
 import chooseAuto from './chooseAuto';
 import searchProducts from './searchProducts';
+import modals from './modals';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     otherNews();
     chooseAuto();
     searchProducts();
+    modals();
 });
 
 window.addEventListener('load', function() {
