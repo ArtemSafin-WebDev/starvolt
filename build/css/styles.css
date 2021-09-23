@@ -1173,7 +1173,7 @@ button.swiper-pagination-bullet {
   --content-padding: 4rem;
   --primary-color: #bb2830;
   --dark-bg: #1a1919;
-  --text-color: #343434;
+  --text-color: #1A1919;
   --franklin-c: "FranklinCTT", sans-serif;
   --franklin: "Franklin", sans-serif;
 }
@@ -8103,6 +8103,7 @@ select:-webkit-autofill:focus {
 @media only screen and (max-width: 640px) {
   .contacts {
     margin-bottom: 5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -8114,8 +8115,21 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (max-width: 640px) {
   .contacts__row {
-    grid-template-columns: minmax(0, 1fr);
-    grid-gap: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 5rem;
+    margin-bottom: 3rem;
+  }
+  .contacts__row:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .contacts__row:last-child {
@@ -8130,8 +8144,26 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (max-width: 640px) {
   .contacts__info-cards-list {
-    grid-template-columns: minmax(0, 1fr);
-    grid-gap: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .contacts__info-cards-list-item {
+    margin-bottom: 1.8rem;
+  }
+  .contacts__info-cards-list-item:nth-child(even) {
+    margin-bottom: 5rem;
+  }
+  .contacts__info-cards-list-item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -8139,12 +8171,6 @@ select:-webkit-autofill:focus {
   font-weight: 500;
   font-size: 2rem;
   line-height: 2.3rem;
-}
-@media only screen and (max-width: 640px) {
-  .contacts__info-card-text {
-    font-size: 1.6rem;
-    line-height: 1.2;
-  }
 }
 .no-touch .contacts__info-card-text a:hover, .touch .contacts__info-card-text a:active {
   color: var(--primary-color);
@@ -8160,12 +8186,6 @@ select:-webkit-autofill:focus {
   display: -ms-flexbox;
   display: flex;
 }
-@media only screen and (max-width: 640px) {
-  .contacts__info-card-title {
-    font-size: 1.8rem;
-    line-height: 1.2;
-  }
-}
 .contacts__info-card-title svg {
   display: inline-block;
   vertical-align: middle;
@@ -8174,13 +8194,6 @@ select:-webkit-autofill:focus {
   height: 1.6rem;
   margin-right: 1rem;
   margin-top: 0.4rem;
-}
-@media only screen and (max-width: 640px) {
-  .contacts__info-card-title svg {
-    width: 1.4rem;
-    height: 1.4rem;
-    margin-right: 0.8rem;
-  }
 }
 
 .contacts__offices {
@@ -8209,7 +8222,8 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (max-width: 640px) {
   .contacts__offices {
-    min-height: 20rem;
+    margin: 0 calc(-1 * var(--content-padding));
+    min-height: 19rem;
   }
 }
 
@@ -8301,7 +8315,14 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (max-width: 640px) {
   .contacts__form {
-    padding: 1.8rem;
+    padding: 0;
+    margin: 0 calc(-1 * var(--content-padding));
+    padding: 0 var(--content-padding);
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -8313,9 +8334,7 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (max-width: 640px) {
   .contacts__heading {
-    font-size: 2.2rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -8328,9 +8347,7 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (max-width: 640px) {
   .contacts__heading-text {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -8352,7 +8369,7 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (max-width: 640px) {
   .contacts__fields {
-    grid-gap: 2rem;
+    grid-gap: 3.2rem;
     grid-template-columns: minmax(0, 1fr);
   }
 }
@@ -8421,7 +8438,7 @@ select:-webkit-autofill:focus {
 @media only screen and (max-width: 640px) {
   .contacts__form-submit {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 3.2rem;
   }
 }
 
@@ -8449,6 +8466,11 @@ textarea.contacts__field-input {
   text-align: center;
   padding: 1.6rem 0;
 }
+@media only screen and (max-width: 640px) {
+  .not-found__content {
+    padding-bottom: 2.4rem;
+  }
+}
 .not-found__content .breadcrumbs {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -8464,7 +8486,7 @@ textarea.contacts__field-input {
 }
 @media only screen and (max-width: 640px) {
   .not-found__icon {
-    width: 12rem;
+    width: 10rem;
   }
 }
 
@@ -8473,7 +8495,7 @@ textarea.contacts__field-input {
   font-size: 3.2rem;
   line-height: 3.6rem;
   margin-bottom: 2rem;
-  color: #1A1919;
+  color: #1a1919;
 }
 @media only screen and (max-width: 640px) {
   .not-found__heading {
@@ -8489,13 +8511,6 @@ textarea.contacts__field-input {
   line-height: 2.3rem;
   color: #9a9a9a;
   margin-bottom: 4rem;
-}
-@media only screen and (max-width: 640px) {
-  .not-found__text {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-  }
 }
 
 .not-found__back-link {
@@ -8535,7 +8550,7 @@ textarea.contacts__field-input {
 }
 @media only screen and (max-width: 640px) {
   .not-found__search {
-    margin-bottom: 3rem;
+    margin-bottom: 0;
   }
 }
 
@@ -8545,7 +8560,12 @@ textarea.contacts__field-input {
   line-height: 2rem;
   letter-spacing: 0.02em;
   margin-bottom: 1.2rem;
-  color: #1A1919;
+  color: #1a1919;
+}
+@media only screen and (max-width: 640px) {
+  .not-found__search-heading {
+    text-align: left;
+  }
 }
 
 .not-found__search-input-wrapper {
@@ -8594,7 +8614,7 @@ textarea.contacts__field-input {
   display: block;
   width: 100%;
   height: 100%;
-  fill: #9A9A9A;
+  fill: #9a9a9a;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
@@ -8608,6 +8628,12 @@ textarea.contacts__field-input {
 @media only screen and (max-width: 640px) {
   .search {
     margin-bottom: 5rem;
+  }
+  .search .categories__heading {
+    font-weight: 500;
+    font-size: 3.2rem !important;
+    line-height: 3.6rem !important;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -8626,8 +8652,15 @@ textarea.contacts__field-input {
 }
 @media only screen and (max-width: 640px) {
   .search__found-categories {
-    gap: 3rem;
-    row-gap: 1.5rem;
+    gap: 2.7rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 1rem;
   }
 }
 
@@ -8676,6 +8709,7 @@ textarea.contacts__field-input {
 @media only screen and (max-width: 640px) {
   .search__results-list {
     grid-template-columns: minmax(0, 1fr);
+    grid-row-gap: 3.2rem;
   }
 }
 
@@ -8702,7 +8736,9 @@ textarea.contacts__field-input {
 }
 @media only screen and (max-width: 640px) {
   .search__edit-query-heading {
-    font-size: 1.8rem;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.3rem;
     margin-bottom: 0.5rem;
   }
 }
