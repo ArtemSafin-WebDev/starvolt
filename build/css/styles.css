@@ -9673,15 +9673,31 @@ textarea.contacts__field-input {
 .about-new {
   margin-bottom: 13rem;
 }
+@media only screen and (max-width: 640px) {
+  .about-new {
+    margin-bottom: 7rem;
+  }
+}
 
 .about-new__intro {
   margin-bottom: 7rem;
+}
+@media only screen and (max-width: 640px) {
+  .about-new__intro {
+    margin-bottom: 0;
+  }
 }
 
 .about-new__intro-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 1.6rem;
+}
+@media only screen and (max-width: 640px) {
+  .about-new__intro-row {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 3.5rem;
+  }
 }
 
 .about-new__intro-heading {
@@ -9724,6 +9740,11 @@ textarea.contacts__field-input {
   display: block;
   margin-top: 1rem;
 }
+@media only screen and (max-width: 640px) {
+  .about-new__intro-video {
+    margin: 0 calc(-1 * var(--content-padding));
+  }
+}
 .about-new__intro-video img {
   position: absolute;
   left: 0;
@@ -9756,6 +9777,12 @@ textarea.contacts__field-input {
   padding-top: 5.8rem;
   padding-bottom: 8rem;
 }
+@media only screen and (max-width: 640px) {
+  .about-new__advantages {
+    margin-bottom: 3.8rem;
+    padding-bottom: 6.8rem;
+  }
+}
 
 .about-new__advantages-heading {
   font-weight: 500;
@@ -9763,11 +9790,21 @@ textarea.contacts__field-input {
   line-height: 3.6rem;
   margin-bottom: 6.5rem;
 }
+@media only screen and (max-width: 640px) {
+  .about-new__advantages-heading {
+    margin-bottom: 2.5rem;
+  }
+}
 
 .about-new__advantages-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 0.8rem;
+}
+@media only screen and (max-width: 640px) {
+  .about-new__advantages-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .about-new__advantages-list-item {
@@ -9779,11 +9816,13 @@ textarea.contacts__field-input {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.about-new__advantages-list-item--high {
-  grid-row: span 2;
-}
-.about-new__advantages-list-item--wide {
-  grid-column: span 2;
+@media only screen and (min-width: 641px) {
+  .about-new__advantages-list-item--high {
+    grid-row: span 2;
+  }
+  .about-new__advantages-list-item--wide {
+    grid-column: span 2;
+  }
 }
 
 .about-new__advantages-card {
@@ -9815,6 +9854,11 @@ textarea.contacts__field-input {
   padding-top: 0.7rem;
   padding-left: 6.4rem;
 }
+@media only screen and (max-width: 640px) {
+  .about-new__advantages-card-content {
+    padding: 0;
+  }
+}
 
 .about-new__advantages-card-title {
   font-weight: 500;
@@ -9823,6 +9867,12 @@ textarea.contacts__field-input {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-bottom: 2.8rem;
+}
+@media only screen and (max-width: 640px) {
+  .about-new__advantages-card-title {
+    padding-left: 6.2rem;
+    padding-top: 0.6rem;
+  }
 }
 
 .about-new__advantages-card-text {
@@ -9857,12 +9907,24 @@ textarea.contacts__field-input {
   margin-bottom: 5.2rem;
   max-width: 66rem;
 }
+@media only screen and (max-width: 640px) {
+  .about-new__pilots-heading-text {
+    margin-bottom: 2.5rem;
+  }
+}
 
 .about-new__pilots-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 3rem;
   margin-bottom: 7.5rem;
+}
+@media only screen and (max-width: 640px) {
+  .about-new__pilots-list {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 0.8rem;
+    margin-bottom: 3.8rem;
+  }
 }
 
 .about-new__pilots-card {
@@ -9908,6 +9970,11 @@ textarea.contacts__field-input {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+@media only screen and (max-width: 640px) {
+  .about-new__pilots-card-content {
+    padding: 2.5rem;
+  }
+}
 
 .about-new__pilots-card-title {
   font-weight: 500;
@@ -9928,6 +9995,12 @@ textarea.contacts__field-input {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 3rem;
 }
+@media only screen and (max-width: 640px) {
+  .about-new__pilots-partnership {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 2.4rem;
+  }
+}
 
 .about-new__pilots-partnership-large-text {
   font-weight: 500;
@@ -9943,7 +10016,16 @@ textarea.contacts__field-input {
   line-height: 2rem;
   letter-spacing: 0.02em;
   position: relative;
-  grid-column: span 2;
+}
+@media only screen and (min-width: 641px) {
+  .about-new__pilots-partnership-small-text {
+    grid-column: span 2;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .about-new__pilots-partnership-small-text {
+    padding-left: 2.8rem;
+  }
 }
 .about-new__pilots-partnership-small-text::before {
   content: "";
