@@ -10042,3 +10042,200 @@ textarea.contacts__field-input {
 .about-new__pilots-partnership-small-text p:last-child {
   margin-bottom: 0;
 }
+
+.guarantee {
+  margin-bottom: 10rem;
+}
+@media only screen and (max-width: 640px) {
+  .guarantee {
+    margin-bottom: 5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.guarantee__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 31rem) minmax(0, 1fr);
+  grid-gap: 6rem;
+}
+@media only screen and (max-width: 640px) {
+  .guarantee__layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 3.4rem;
+  }
+}
+
+.guarantee__period {
+  background: #ffdee0;
+  padding: 2.4rem;
+  padding-top: 2rem;
+  padding-bottom: 3.4rem;
+  position: relative;
+  margin-bottom: 2.2rem;
+  z-index: 1;
+}
+
+.guarantee__period-heading {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.guarantee__period-text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  padding-right: 7rem;
+}
+
+.guarantee__period-image {
+  position: absolute;
+  z-index: -1;
+  bottom: 1.2rem;
+  right: 1.7rem;
+  width: 7.6rem;
+  height: 7.6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.guarantee__text-content {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+}
+.guarantee__text-content h1,
+.guarantee__text-content h2,
+.guarantee__text-content h3,
+.guarantee__text-content h4,
+.guarantee__text-content h5,
+.guarantee__text-content h6 {
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.02em;
+  margin-top: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+.guarantee__text-content h1:first-child,
+.guarantee__text-content h2:first-child,
+.guarantee__text-content h3:first-child,
+.guarantee__text-content h4:first-child,
+.guarantee__text-content h5:first-child,
+.guarantee__text-content h6:first-child {
+  margin-top: 0;
+}
+.guarantee__text-content h1:last-child,
+.guarantee__text-content h2:last-child,
+.guarantee__text-content h3:last-child,
+.guarantee__text-content h4:last-child,
+.guarantee__text-content h5:last-child,
+.guarantee__text-content h6:last-child {
+  margin-bottom: 0;
+}
+.guarantee__text-content ol,
+.guarantee__text-content ul {
+  margin-bottom: 1.5rem;
+}
+.guarantee__text-content ol ul,
+.guarantee__text-content ol ol,
+.guarantee__text-content ul ul,
+.guarantee__text-content ul ol {
+  padding-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+.guarantee__text-content ol li,
+.guarantee__text-content ul li {
+  margin-bottom: 1.5rem;
+}
+.guarantee__text-content ol li:last-child,
+.guarantee__text-content ul li:last-child {
+  margin-bottom: 0;
+}
+.guarantee__text-content ul li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.guarantee__text-content ul li::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+}
+.guarantee__text-content a {
+  color: var(--primary-color);
+}
+.guarantee__text-content a:link, .guarantee__text-content a:visited {
+  color: var(--primary-color);
+}
+.no-touch .guarantee__text-content a:hover, .touch .guarantee__text-content a:active {
+  text-decoration: underline;
+}
+.guarantee__text-content blockquote {
+  padding-left: 4rem;
+  position: relative;
+  margin: 4.5rem 0;
+}
+.guarantee__text-content blockquote:first-child {
+  margin-top: 0;
+}
+.guarantee__text-content blockquote:last-child {
+  margin-bottom: 0;
+}
+.guarantee__text-content blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background-color: var(--primary-color);
+}
+@media only screen and (max-width: 640px) {
+  .guarantee__text-content blockquote::before {
+    bottom: auto;
+    height: 8.2rem;
+  }
+}
+
+.guarantee__act {
+  padding: 2.4rem;
+  background: #f5f5f5;
+  padding-top: 2rem;
+}
+
+.guarantee__act-heading {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.guarantee__act-link {
+  padding: 1.4rem 2.8rem;
+  border-radius: 0.3rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: var(--franklin-c);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: var(--primary-color);
+}
+.guarantee__act-link:link, .guarantee__act-link:visited {
+  color: white;
+}
